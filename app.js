@@ -1,4 +1,6 @@
 const header = document.querySelector("#header");
+const mobileMenu = document.querySelector(".burger-menu");
+const mobileNav = document.querySelector(".mobile-nav");
 
 let count = 1;
 
@@ -13,6 +15,9 @@ function changeImg() {
   console.log(count);
 }
 
-setInterval(changeImg, 4000);
+// setInterval(changeImg, 4000);
 
-// setInterval(changeImg, 100);
+mobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("close");
+  mobileNav.classList.toggle("show");
+});
