@@ -4,29 +4,68 @@
   margin: 0 auto;
   color: @dark;
 
+  @media @small-computer {
+    //  width: 95%;
+    padding: 0 1rem;
+  }
+
   .section {
     //  border: 1px solid blue;
     margin: @space-bt-section 0;
 
+    @media @paddings {
+      margin: 5rem 0;
+    }
+
     h2 {
       text-align: center;
       font-size: 2.3rem;
+
+      @media @paddings {
+        font-size: 2.1rem;
+      }
+
+      @media @sm-phone {
+        font-size: 1.8rem;
+      }
+
+      @media @xsm-phone {
+        font-size: 1.5rem;
+      }
     }
 
     .section-one {
       margin-top: @space-bt-h2;
       .flexProps(space-between);
+
+      @media @small-computer {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       // border: 1px solid red;
       padding: 6rem 0 1rem;
       border-radius: 10px;
       background: rgb(252, 252, 252);
       box-shadow: 0px 2px 14px -2px @border-color;
 
+      @media @paddings {
+        padding: 3rem 0 1rem;
+      }
+
       .left-side {
         //   border: 1px solid blue;
         margin: 0 1rem;
         padding-right: 7rem;
         //   width: 70%;
+        @media @small-computer {
+          padding-right: 0;
+        }
+        p {
+          @media @sm-phone {
+            font-size: 1.1rem;
+          }
+        }
       }
 
       .img-container {
@@ -41,6 +80,17 @@
         width: 35%;
         //   border: 1px solid red;
         margin-top: -5rem;
+
+        @media @small-computer {
+          width: 300px;
+          height: 300px;
+          margin-top: 1rem;
+        }
+
+        @media @phone {
+          width: 250px;
+          height: 200px;
+        }
       }
     }
   }
@@ -55,13 +105,32 @@
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: @space-bt-h2;
+      @media @paddings {
+        font-size: 2rem;
+      }
+
+      @media @sm-phone {
+        font-size: 1.8rem;
+      }
+      @media @xsm-phone {
+        font-size: 1.5rem;
+      }
     }
 
     .section-two-container {
       .flexProps(space-between);
+      // border: 1px solid green;
+      padding: 0 1rem;
       border-radius: 10px;
       background: rgb(252, 252, 252);
       box-shadow: 0px 2px 14px -2px @border-color;
+
+      @media @seven-hd {
+        flex-wrap: wrap;
+      }
+      @media @phone {
+        justify-content: center;
+      }
 
       .logo {
         margin: 5rem 0;
@@ -69,10 +138,31 @@
         width: 30%;
         text-align: center;
 
+        @media @seven-hd {
+          width: 50%;
+        }
+
+        @media @phone {
+          width: 90%;
+        }
+
+        @media @paddings {
+          margin: 3rem 0;
+        }
+        @media @sm-phone {
+          margin: 1rem 0;
+        }
+
         div {
           i {
             font-size: 3rem;
             // color: @logo-color;
+            @media @sm-phone {
+              font-size: 2.8rem;
+            }
+            @media @xsm-phone {
+              font-size: 2.5rem;
+            }
           }
         }
 
@@ -80,6 +170,13 @@
           padding: 1rem 0 0.5rem;
           font-weight: bold;
           font-size: 1.3rem;
+          @media @sm-phone {
+            font-size: 1.2rem;
+          }
+
+          @media @xsm-phone {
+            font-size: 1.1rem;
+          }
         }
 
         span {
@@ -92,29 +189,76 @@
   .section-three {
     //  border: 1px solid red;
     margin: @space-bt-section 0;
+
+    @media @paddings {
+      margin: 5rem 0;
+    }
+
     h2 {
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: 3rem;
+
+      @media @paddings {
+        font-size: 2rem;
+      }
+      @media @sm-phone {
+        font-size: 1.8rem;
+      }
+      @media @xsm-phone {
+        font-size: 1.5rem;
+      }
     }
 
     .section-three-container {
-      .flexProps(space-around);
+      .flexProps(space-between);
+      // border: 1px solid red;
+
+      @media @tablet {
+        flex-wrap: wrap;
+      }
+      @media @seven-hd {
+        justify-content: center;
+      }
 
       h2 {
         text-align: start;
         font-size: 1.6rem;
         margin-bottom: 0;
+
+        @media @xsm-phone {
+          font-size: 1.4rem;
+        }
       }
 
       .subscripions {
-        padding: 1rem 1rem 2rem;
+        padding: 1rem 1rem 2.5rem;
         width: 32%;
         height: 45vh;
-        //   border: 1px solid @border-color;
+        //   border: 1px solid green;
         border-radius: 10px;
         background: rgb(252, 252, 252);
         box-shadow: 0px 2px 14px -2px @border-color;
+
+        @media @tablet {
+          width: 43%;
+          margin-bottom: 1rem;
+        }
+
+        @media @seven-hd {
+          width: 70%;
+        }
+        @media @phone {
+          width: 90%;
+        }
+
+        @media @sm-phone {
+          height: 77vh;
+        }
+
+        @media @xsm-phone {
+          height: 100vh;
+        }
 
         .month-free {
           border: 1px solid @logo-color;
@@ -137,16 +281,28 @@
           margin-bottom: 1.5rem;
           padding-bottom: 1.5rem;
           border-bottom: 1px solid @border-color;
+          @media @xsm-phone {
+            font-size: 1.3rem;
+          }
+          @media @xsm-phone {
+            font-size: 1rem;
+          }
         }
 
         p {
           font-size: 1.1rem;
+          @media @xsm-phone {
+            font-size: 1rem;
+          }
         }
 
         .checkmark {
           //  border: 1px solid red;
           font-weight: 100;
           margin-right: 1rem;
+          @media @xsm-phone {
+            font-size: 1.1rem;
+          }
         }
 
         .btn-container {
@@ -156,27 +312,29 @@
             margin: 0 auto 1rem;
             text-transform: uppercase;
             font-size: 1rem;
+
+            @media @xsm-phone {
+              font-size: 0.7rem;
+            }
           }
         }
 
         .terms {
           font-size: 0.8rem;
           color: grey;
+          @media @xsm-phone {
+            font-size: 0.6rem;
+          }
         }
         .terms a {
           font-size: 0.8rem;
           color: grey;
           text-decoration: underline;
+          @media @xsm-phone {
+            font-size: 0.6rem;
+          }
         }
       }
-      // .basic {
-      //   border: 1px solid blue;
-      //   width: 45%;
-      // }
-      // .premium {
-      //   border: 1px solid blue;
-      //   width: 45%;
-      // }
     }
   }
 }
@@ -189,6 +347,17 @@ footer {
     max-width: @max-width;
     margin: auto;
     padding: 4rem 0;
+
+    @media @small-computer {
+      padding: 4rem 1rem;
+    }
+
+    @media @phone {
+      padding: 3rem 1rem;
+    }
+    @media @xsm-phone {
+      padding: 2rem 1rem;
+    }
 
     span {
       font-size: 0.7rem;
