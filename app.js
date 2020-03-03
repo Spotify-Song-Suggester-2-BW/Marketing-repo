@@ -15,7 +15,7 @@ function changeImg() {
   console.log(count);
 }
 
-// setInterval(changeImg, 4000);
+// setInterval(changeImg, 5000);
 
 mobileMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("close");
