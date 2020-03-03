@@ -5,7 +5,6 @@
   @media @paddings {
     margin: 5rem auto;
   }
-  //   border: 1px solid red;
 
   section {
     h2 {
@@ -18,19 +17,15 @@
       }
     }
     .show-team {
-      // border: 1px solid blue;
-      display: flex;
-      justify-content: space-between;
+      .flexProps(space-between);
       flex-wrap: wrap;
       padding: 0 1rem;
 
       .single {
         width: 47%;
-        //   border: 1px solid red;
         padding: 1rem;
         margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
+        .flexProps(space-between);
         border-radius: 10px;
         background: rgb(252, 252, 252);
         box-shadow: 0px 2px 14px -2px @border-color;
@@ -48,6 +43,7 @@
           width: 100px;
           height: 100px;
           background: url("../img/img2.jpg");
+          .imgProps();
           border-radius: 50%;
           margin-top: 2rem;
           margin-right: 0.5rem;
@@ -62,8 +58,46 @@
           }
         }
 
+        .me {
+          background: url("../img/me.jpeg");
+          .imgProps();
+        }
+
+        .adebola {
+          background: url("../img/adebola.jpeg");
+          .imgProps();
+        }
+
+        .nyjae {
+          background: url("../img/nyjae.jpeg");
+          .imgProps();
+        }
+        //   .hunter {
+        //     background: url("../img/");
+        //     .imgProps();
+        //   }
+
+        .spencer {
+          background: url("../img/spencer.jpeg");
+          .imgProps();
+        }
+        .mahfuzur {
+          background: url("../img/mahfuzur.jpeg");
+          .imgProps();
+        }
+        .steven {
+          background: url("../img/steven.jpeg");
+          .imgProps();
+        }
+        .joshua {
+          background: url("../img/joshua.png");
+          .imgProps();
+        }
+        .agustin {
+          background: url("../img/agustin.jpeg");
+          .imgProps();
+        }
         .description {
-          //  border: 1px solid green;
           width: 80%;
           padding: 0.5rem;
 
@@ -81,7 +115,6 @@
           }
           p {
             padding: 0.5rem 0 1.5rem;
-            // border: 1px solid red;
             @media @phone {
               font-size: 1.1rem;
             }
@@ -92,13 +125,9 @@
           }
 
           .wrapper {
-            display: flex;
-            // justify-content: center;
-
             button {
               .btnStyle(150px);
               padding: 0.4rem 2rem;
-              //   font-size: 1rem;
 
               a {
                 color: @white;
