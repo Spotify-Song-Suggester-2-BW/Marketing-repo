@@ -31,9 +31,23 @@ header {
     margin: 0 auto;
 
     .logo-n-links {
+      transition: all 0.7s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       .flexProps(space-between);
-      padding: 1rem 0.5rem 0;
+      padding: 1rem 30rem 0;
       align-items: center;
+
+      @media @nav-width {
+        padding: 1rem 12rem 0;
+      }
+
+      @media @small-computer {
+        padding: 1rem 2rem 0;
+      }
+
       .logo-container {
         display: flex;
 
@@ -63,6 +77,10 @@ header {
             font-size: 1.2rem;
             margin: 0.6rem 0 0 0.5rem;
           }
+
+          @media @sm-phone {
+            display: none;
+          }
         }
       }
       nav {
@@ -70,7 +88,7 @@ header {
         .flexProps(space-between);
         @media @small-computer {
           padding: 0 3rem;
-          width: 35%;
+          width: 40%;
         }
 
         a {
@@ -108,16 +126,29 @@ header {
       h1 {
         font-size: 3.5rem;
 
-        @media @phone {
+        @media @tablet {
+          text-align: center;
+        }
+
+        @media @paddings {
+          margin-top: 10rem;
+        }
+        @media @seven-hd {
+          margin-top: 3rem;
           font-size: 2.8rem;
         }
+
         @media @sm-phone {
           font-size: 2.4rem;
+          margin-top: 4rem;
         }
 
         @media @xsm-phone {
-          font-size: 2.2rem;
-          margin-top: -1rem;
+          font-size: 2.1rem;
+        }
+        @media @xxsm-phone {
+          font-size: 2rem;
+          margin-top: 5rem;
         }
       }
 

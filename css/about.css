@@ -104,10 +104,25 @@ header .header-container {
   margin: 0 auto;
 }
 header .header-container .logo-n-links {
+  transition: all 0.7s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0.5rem 0;
+  padding: 1rem 30rem 0;
   align-items: center;
+}
+@media (max-width: 1970px) {
+  header .header-container .logo-n-links {
+    padding: 1rem 12rem 0;
+  }
+}
+@media (max-width: 1500px) {
+  header .header-container .logo-n-links {
+    padding: 1rem 2rem 0;
+  }
 }
 header .header-container .logo-n-links .logo-container {
   display: flex;
@@ -141,6 +156,11 @@ header .header-container .logo-n-links .logo-container h2 {
     margin: 0.6rem 0 0 0.5rem;
   }
 }
+@media (max-width: 414px) {
+  header .header-container .logo-n-links .logo-container h2 {
+    display: none;
+  }
+}
 header .header-container .logo-n-links nav {
   width: 30%;
   display: flex;
@@ -149,7 +169,7 @@ header .header-container .logo-n-links nav {
 @media (max-width: 1500px) {
   header .header-container .logo-n-links nav {
     padding: 0 3rem;
-    width: 35%;
+    width: 40%;
   }
 }
 header .header-container .logo-n-links nav a {
@@ -189,20 +209,37 @@ header .header-container .header-description {
 header .header-container .header-description h1 {
   font-size: 3.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
   header .header-container .header-description h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 870px) {
+  header .header-container .header-description h1 {
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 700px) {
+  header .header-container .header-description h1 {
+    margin-top: 3rem;
     font-size: 2.8rem;
   }
 }
 @media (max-width: 414px) {
   header .header-container .header-description h1 {
     font-size: 2.4rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 360px) {
   header .header-container .header-description h1 {
-    font-size: 2.2rem;
-    margin-top: -1rem;
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 320px) {
+  header .header-container .header-description h1 {
+    font-size: 2rem;
+    margin-top: 5rem;
   }
 }
 header .header-container .header-description span {
@@ -236,8 +273,8 @@ header .header-container .header-description button {
   margin-top: 0.5rem;
   display: none;
   cursor: pointer;
-  position: absolute;
-  top: 2%;
+  position: fixed;
+  top: 1%;
   right: 3%;
   transition: transform 0.8s ease;
   z-index: 5000;
