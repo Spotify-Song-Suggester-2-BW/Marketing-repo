@@ -12,10 +12,10 @@ function changeImg() {
 
   //   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
 
-  //   setTimeout(() => {
-  //    //  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
-  //     //   count++;
-  //   }, 1);
+  setTimeout(() => {
+    header.style.backgroundImage = `url(./img/img${count}.jpg)`;
+    //   count++;
+  }, 1);
   if (count === 5) {
     count = 1;
   }
