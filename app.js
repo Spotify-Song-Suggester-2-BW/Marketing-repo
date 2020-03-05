@@ -13,7 +13,7 @@ function changeImg() {
     header.style.backgroundImage = `url(./img/img${count}.jpg)`;
     //  count++;
   }, 1);
-  if (count === 5) {
+  if (count === 6) {
     count = 1;
   }
   console.log(count);
