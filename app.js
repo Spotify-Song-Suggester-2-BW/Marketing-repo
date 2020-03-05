@@ -9,6 +9,7 @@ const width = window.matchMedia("(max-width: 870px)");
 function changeImg() {
   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
   count++;
+  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
 
   if (count === 5) {
     count = 1;
