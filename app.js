@@ -3,15 +3,15 @@ const mobileMenu = document.querySelector(".burger-menu");
 const mobileNav = document.querySelector(".mobile-nav");
 const navlinks = document.querySelector(".logo-n-links");
 
-let count = 1;
+let count = 0;
 const width = window.matchMedia("(max-width: 870px)");
 
 function changeImg() {
-  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
   count++;
+  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
 
   if (count === 5) {
-    count = 1;
+    count = 0;
   }
   console.log(count);
 }
