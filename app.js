@@ -9,7 +9,7 @@ const width = window.matchMedia("(max-width: 870px)");
 function changeImg() {
   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
   setTimeout(() => {
-    //  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
+    header.style.backgroundImage = `url(./img/img${count}.jpg)`;
     count++;
   }, 100);
   if (count === 5) {
