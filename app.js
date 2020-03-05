@@ -11,7 +11,7 @@ function changeImg() {
   setTimeout(() => {
     header.style.backgroundImage = `url(./img/img${count}.jpg)`;
     count++;
-  }, 100);
+  }, 1);
   if (count === 5) {
     count = 1;
   }
