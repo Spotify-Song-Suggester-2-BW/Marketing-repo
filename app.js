@@ -6,8 +6,9 @@ const navlinks = document.querySelector(".logo-n-links");
 let count = 1;
 const width = window.matchMedia("(max-width: 870px)");
 
+header.style.backgroundImage = `url(./img/img${count}.jpg)`;
 function changeImg() {
-  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
+  //   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
   count++;
 
   //   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
