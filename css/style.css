@@ -79,7 +79,7 @@ h5 {
   position: relative;
   z-index: 5;
   color: #f4f4f4;
-  transition: background 1.2s ease;
+  transition: background 0.5s ease;
 }
 @media (max-width: 500px) {
   .header-home {
