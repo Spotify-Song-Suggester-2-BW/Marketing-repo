@@ -7,13 +7,15 @@ let count = 1;
 const width = window.matchMedia("(max-width: 870px)");
 
 function changeImg() {
-  header.style.backgroundImage = `url(./img/img${count}.jpg)`;
+  //   header.style.backgroundImage = `url(./img/img${count}.jpg)`;
   setTimeout(() => {
+    header.style.backgroundImage = `url(./img/img${count}.jpg)`;
     count++;
   }, 10);
   if (count === 5) {
     count = 1;
   }
+  console.log(count);
 }
 
 function mobile() {
