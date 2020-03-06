@@ -551,3 +551,37 @@ footer .footer-container {
 footer .footer-container span {
   font-size: 0.7rem;
 }
+.graph-container {
+  margin: 6rem 0;
+  height: 50%;
+  padding: 0 1rem;
+}
+@media (max-width: 1500px) {
+  .graph-container {
+    display: none;
+  }
+}
+.graph-container h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .graph-container h2 {
+    font-size: 2rem;
+  }
+}
+.graph-container p {
+  padding: 0.5rem 0 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .graph-container p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 414px) {
+  .graph-container p {
+    font-size: 1rem;
+  }
+}
